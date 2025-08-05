@@ -1,0 +1,69 @@
+body {
+    background: #181818;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.ttt-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #23272f;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    padding: 32px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+.ttt-status {
+    color: #f8f8f8;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    min-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+.ttt-board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.ttt-cell {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ttt-cell:hover {
+    background-color: #e0e0e0;
+}
+
+.winner {
+    background-color: #4caf50;
+    color: white;
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

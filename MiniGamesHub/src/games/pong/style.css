@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+canvas {
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+.paddle {
+    background-color: #fff;
+    width: 10px;
+    height: 100px;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
